@@ -1,0 +1,118 @@
+Build a complete static marketing website for "Shule-Tech Softwares" — a sub-brand of APSHULE. Pure HTML/CSS/JS only. No React. No PWA. No manifest. No service worker. No backend.
+
+STACK
+- Plain HTML5 + CSS3 + Vanilla JavaScript
+- Single index.html + styles.css + script.js
+- All files at repo root
+- Must run as static files (no build step needed)
+
+BRAND
+- Name: Shule-Tech Softwares
+- Tagline: "let's build with ease"
+- Phone: 0794221315
+- Email: shuletech15@gmail.com
+- WhatsApp link: https://wa.me/256794221315
+- Logo asset path: assets/shule-tech-ideology.png (I will upload later — use text placeholder if missing)
+- Favicon: assets/laptop-code-favicon.png
+
+COLORS (use CSS variables)
+--navy: #0A1A2F
+--blue: #0096FF
+--orange: #FF8C00
+--white: #FFFFFF
+--light: #f8faff
+--border: #e8edf5
+--whatsapp: #25D366
+
+FONT
+- Google Fonts: Poppins (300,400,500,600,700,800)
+
+LAYOUT — one index.html with these sections in order:
+
+1. STICKY HEADER
+   - Left: logo image (or "Shule-Tech" text if missing)
+   - Center: nav links — Home | Services | Pricing | Portfolio | Contact
+   - Right: phone 0794221315, green WhatsApp button, account icon linking to https://appshule.com/my-account/
+   - Mobile: hamburger toggle, animated
+
+2. HERO (dark navy gradient with radial blue/orange glows)
+   - Badge pill: "Shule-Tech Softwares" with code icon
+   - H1: "We Build Websites & Mobile Apps That Bring Clients"
+     — Make "Websites" and "Mobile Apps" gradient text (blue → orange)
+   - Sub-headline: "Shule-Tech Softwares — your tech partner in Uganda"
+   - Orange uppercase tagline: "let's build with ease"
+   - Two buttons: [Hire Us — 0794221315] (green #25D366, opens https://wa.me/256794221315?text=...) + [View Pricing] (outline, scrolls to #pricing)
+
+3. SERVICES (light section, 5 cards grid)
+   - Website Development — Custom, responsive websites built with modern frameworks. From business sites to e-commerce stores — we build for speed, SEO, and conversions.
+   - Android Apps — Native Android applications built with Kotlin. Deployed to Google Play with full support.
+   - iOS Apps — Swift and SwiftUI applications for iPhone and iPad. From concept to App Store submission.
+   - Logo & Hosting — Professional logo design plus reliable hosting setup. Domain registration, SSL certificates, and cPanel configuration included.
+   - Learn Coding — One-on-one and group coding lessons. HTML, CSS, JavaScript, Python, WordPress — learn skills that earn money.
+   Each card: SVG icon (blue), title, paragraph. Hover: lift + top gradient border.
+
+4. PRICING (dark navy section, 4 cards)
+   - Starter Website — 600K UGX — 5-page website, mobile responsive, contact form, 1 year hosting
+   - Business Website — 1.2M UGX — FEATURED (blue border, "POPULAR" badge) — 10-page website, e-commerce ready, SEO optimization, hosting + domain
+   - Android App — 1M UGX — Custom Android app, Play Store deployment, 3 months support, source code included
+   - Full Package — 2M UGX — Business website, Android app, logo design, hosting + domain + SSL, priority support
+   Each card: name, price (large), description, feature list with checkmarks, "Get Started" button → WhatsApp with package-specific pre-filled message.
+
+5. PORTFOLIO (light section, 2 cards)
+   - Card 1: "APSHULE — Digital Learning Platform" — A full learning management platform with courses, exams, notes, and video lessons. Built on WordPress + WooCommerce with custom learning features. Tags: WordPress, WooCommerce, LMS, Responsive, Payments. Visual: navy gradient block with "APSHULE" wordmark (AP in blue).
+   - Card 2: "More projects on the way" placeholder.
+
+6. CONTACT (white section, 2 columns)
+   - Left: heading "Let's Build Something", paragraph, then 3 contact methods each with blue icon:
+     * Phone: 0794 221 315 (tel:+256794221315)
+     * Email: shuletech15@gmail.com (mailto:)
+     * WhatsApp: link to wa.me/256794221315
+   - Right: form with fields — Name (required), Phone (required), Email (required), Service dropdown [Website, Android, iOS, Logo & Hosting, Learn Coding, Other], Message textarea (required), Submit "Send Message".
+   - On submit: prevent default, console.log the data, show inline green success banner "✓ Message sent successfully! We will get back to you shortly." and reset form.
+
+7. FOOTER (dark navy, 2 columns)
+   - Column 1 — APSHULE:
+       Logo: assets/apshule-logo.png (or text)
+       Name: APSHULE
+       Tagline: "let's learn with ease"
+       Links: appshule.com | +256731038702 | your APSHULE email
+   - Column 2 — Shule-Tech Softwares:
+       Logo: assets/shule-tech-ideology.png (or text)
+       Name: Shule-Tech Softwares
+       Tagline: "let's build with ease"
+       Links: appshule.com/tech | 0794221315 | shuletech15@gmail.com
+   - Divider line
+   - Bottom: "© 2026 APSHULE. All rights reserved. Shule-Tech Softwares is a sub-brand of APSHULE." + Legal links: Privacy Policy | Terms of Service
+
+8. FLOATING WHATSAPP BUTTON
+   - Fixed bottom-right, 56px green circle, WhatsApp SVG icon
+   - Links to https://wa.me/256794221315?text=Hello+Shule-Tech...
+   - Hover: scale up slightly
+
+FUNCTIONALITY
+- Smooth scroll for anchor links
+- Mobile hamburger toggle with animation
+- Form validation + inline success state (console.log for now)
+- Responsive down to 360px width
+- SEO meta tags in <head>:
+    title: "Shule-Tech Softwares Uganda | Website & App Development | 0794221315"
+    description: "We build affordable websites and mobile apps in Uganda. Call 0794221315."
+    OG tags, canonical https://appshule.com/tech/
+    JSON-LD LocalBusiness schema with name, phone +256794221315, email shuletech15@gmail.com, url https://appshule.com/tech/
+
+DO NOT
+- Add React, Vue, or any framework
+- Add a manifest.json
+- Add a service worker
+- Add PWA features (this is a website, not an app)
+- Add backend, database, or authentication
+- Add Stripe, PayPal, or any payment code
+- Use any phone number or email other than 0794221315 / shuletech15@gmail.com for Shule-Tech, and +256731038702 for APSHULE
+- Add any mention of "Foundation"
+
+DELIVERABLE
+- Complete index.html, styles.css, script.js at repo root
+- Preview URL so I can test on mobile
+- Push commits to the connected GitHub repo
+
+Build it all in one go.
