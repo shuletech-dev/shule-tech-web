@@ -119,9 +119,6 @@ h2 { font-size: clamp(32px, 4vw, 48px); letter-spacing: -.055em; line-height: 1.
 .st-client-logo-image { display: block; flex: 0 0 62px; width: 62px; height: 62px; padding: 3px; object-fit: contain; background: white; border: 1px solid var(--st-border); border-radius: 10px; }
 .st-client-logo strong { font-size: 17px; line-height: 1.1; letter-spacing: -.06em; }
 .st-client-logo small { margin-top: 3px; font-size: 6px; font-weight: 700; letter-spacing: .12em; opacity: .65; }
-.st-client-logo-apshule { color: #006bb7; background: #e4f4ff; }
-.st-client-logo-rosete { color: #b65d27; background: #fff2e7; }
-.st-client-logo-sarang { color: #7257a2; background: #f1eafa; }
 .st-client-logo-more { color: var(--st-blue); background: #e8f5ff; }
 .st-client-logo-more strong { font-size: 30px; font-weight: 400; }
 .st-client-name { display: flex; flex: 1; flex-direction: column; min-width: 0; gap: 4px; }
