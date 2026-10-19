@@ -136,3 +136,45 @@ h2 { font-size: clamp(32px, 4vw, 48px); letter-spacing: -.055em; line-height: 1.
   .st-client-grid { grid-template-columns: 1fr; }
   .st-client-heading h3 { font-size: 20px; }
 }
+
+/* SECTION: TASK 2 UI UPDATES */
+body::before {
+  position: fixed;
+  z-index: 12;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: url("assets/shule-tech-ideology.jpg") center / min(520px, 72vw) auto no-repeat;
+  opacity: .065;
+  mask-image: radial-gradient(circle at center, #000 46%, transparent 73%);
+}
+.st-main-nav { order: 1; margin-left: 0; }
+.st-header-actions { order: 2; margin-left: auto; }
+.st-brand { order: 3; }
+.st-service-icon {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 19px;
+  border-radius: 15px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 8px 18px rgba(10,26,47,.06);
+}
+.st-service-icon svg { display: block; width: 39px; height: 39px; }
+.st-icon-blue { background: linear-gradient(145deg, #e7f6ff, #cceaff); }
+.st-icon-orange { background: linear-gradient(145deg, #fff1dc, #ffe2b4); }
+.st-icon-purple { background: linear-gradient(145deg, #eeebff, #dcd6ff); }
+.st-form-success, .st-form-note {
+  margin-top: 14px;
+  padding: 11px 12px;
+  border-radius: 6px;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.st-form-success { color: #167746; background: #e9faf0; border: 1px solid #b8edcd; }
+.st-form-note { margin-bottom: 0; color: #65728a; background: #f4f8fc; border: 1px solid #e3eaf2; }
+.st-form-note a { color: #0877c9; font-weight: 700; text-decoration: underline; }
+
+@media (max-width: 760px) {
+  .st-brand { order: 3; }
+  .st-header-actions { display: none; }
+  .st-menu-toggle { order: 1; }
+}

@@ -41,11 +41,21 @@
   if (contactForm && successBanner) {
     contactForm.addEventListener("submit", function (event) {
       event.preventDefault();
-      var formData = Object.fromEntries(new FormData(contactForm).entries());
-      console.log("Shule-Tech contact inquiry:", formData);
-      contactForm.reset();
+      var formData = new FormData(contactForm);
+      var subject = "Website inquiry from " + formData.get("name");
+      var body = [
+        "Name: " + formData.get("name"),
+        "Phone: " + formData.get("phone"),
+        "Email: " + formData.get("email"),
+        "Service: " + formData.get("service"),
+        "",
+        "Message:",
+        formData.get("message")
+      ].join("\n");
+      var emailLink = "mailto:{{EMAIL}}?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
       successBanner.hidden = false;
-      window.setTimeout(function () { successBanner.hidden = true; }, 7000);
+      window.location.href = emailLink;
     });
   }
 }());

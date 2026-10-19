@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shule-Tech Softwares Uganda | Website &amp; App Development</title>
+    <!-- WordPress contact replacements: {{PHONE}}=+256 794 221 315; {{PHONE_TEL}}=+256794221315; {{WHATSAPP}}=https://wa.me/256794221315; {{EMAIL}}=shuletech15@gmail.com -->
     <meta name="description" content="We build affordable websites and mobile apps in Uganda." />
     <meta name="theme-color" content="#0a1a2f" />
     <link rel="canonical" href="{{CANONICAL_URL}}" />
@@ -92,9 +93,9 @@
         <div class="st-container">
           <div class="st-section-heading"><div><p class="st-eyebrow">What we do</p><h2 id="services-title">Everything you need to <span class="st-blue-text">build better.</span></h2></div><p class="st-section-intro">From your first idea to your next big launch, we turn ambitious plans into simple, useful digital products.</p></div>
           <div class="st-service-grid">
-            <article class="st-service-card"><div class="st-service-icon st-icon-blue">⌘</div><h3>Website Development</h3><p>Custom, responsive websites built for speed, SEO, and conversions — from business sites to e-commerce stores.</p><a href="#contact">Start a website <span>↗</span></a></article>
-            <article class="st-service-card"><div class="st-service-icon st-icon-orange">▯</div><h3>Android Apps</h3><p>Native Android applications built with Kotlin, deployed to Google Play with full support.</p><a href="#contact">Build an app <span>↗</span></a></article>
-            <article class="st-service-card"><div class="st-service-icon st-icon-purple">✣</div><h3>iOS Apps</h3><p>Swift and SwiftUI applications for iPhone and iPad, from concept to App Store submission.</p><a href="#contact">Build an app <span>↗</span></a></article>
+            <article class="st-service-card"><div class="st-service-icon st-icon-blue" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><rect x="6" y="8" width="36" height="26" rx="4" fill="#fff" stroke="#0a1a2f" stroke-width="2.5"/><path d="M6 14h36" stroke="#0a1a2f" stroke-width="2.5"/><circle cx="11" cy="11" r="1" fill="#ff8c00"/><circle cx="15" cy="11" r="1" fill="#0096ff"/><path d="m18 21-4 3 4 3m12-6 4 3-4 3m-5-8-3 10" fill="none" stroke="#0096ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/><path d="M3 39h42l-4-5H7z" fill="#b9e3ff" stroke="#0a1a2f" stroke-linejoin="round" stroke-width="2.5"/></svg></div><h3>Website Development</h3><p>Custom, responsive websites built for speed, SEO, and conversions — from business sites to e-commerce stores.</p><a href="#contact">Start a website <span>↗</span></a></article>
+            <article class="st-service-card"><div class="st-service-icon st-icon-orange" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path d="M13 19a11 11 0 0 1 22 0v2H13z" fill="#3ddc84"/><path d="M12 21h24v13a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4z" fill="#27c875"/><path d="m17 13-3-5m17 5 3-5" stroke="#0a1a2f" stroke-linecap="round" stroke-width="2"/><circle cx="20" cy="17" r="1.5" fill="#0a1a2f"/><circle cx="28" cy="17" r="1.5" fill="#0a1a2f"/><path d="M9 23v9m30-9v9M18 37v5m12-5v5" stroke="#0a1a2f" stroke-linecap="round" stroke-width="3"/></svg></div><h3>Android Apps</h3><p>Native Android applications built with Kotlin, deployed to Google Play with full support.</p><a href="#contact">Build an app <span>↗</span></a></article>
+            <article class="st-service-card"><div class="st-service-icon st-icon-purple" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><rect x="12" y="4" width="24" height="40" rx="6" fill="#0a1a2f"/><rect x="14.5" y="8" width="19" height="30" rx="3" fill="#f8faff"/><path d="M18 13h12v3H18z" fill="#dceeff"/><circle cx="20" cy="23" r="2.5" fill="#0096ff"/><circle cx="28" cy="23" r="2.5" fill="#735cf5"/><circle cx="20" cy="30" r="2.5" fill="#ff8c00"/><circle cx="28" cy="30" r="2.5" fill="#3ddc84"/><circle cx="24" cy="41" r="1.4" fill="#b8c5d5"/></svg></div><h3>iOS Apps</h3><p>Swift and SwiftUI applications for iPhone and iPad, from concept to App Store submission.</p><a href="#contact">Build an app <span>↗</span></a></article>
             <article class="st-service-card"><div class="st-service-icon st-icon-green">⌁</div><h3>Logo &amp; Hosting</h3><p>Professional logo design and reliable hosting setup, including domain, SSL, and cPanel configuration.</p><a href="#contact">Get set up <span>↗</span></a></article>
             <article class="st-service-card"><div class="st-service-icon st-icon-coral">▦</div><h3>Learn Coding</h3><p>One-on-one and group lessons in HTML, CSS, JavaScript, Python, and WordPress — skills that earn money.</p><a href="#contact">Learn with us <span>↗</span></a></article>
           </div>
@@ -167,7 +168,8 @@
             <label>What can we help with?<select name="service"><option value="Website">Website development</option><option value="Android">Android app</option><option value="iOS">iOS app</option><option value="Logo & Hosting">Logo &amp; hosting</option><option value="Learn Coding">Learn coding</option><option value="Other">Something else</option></select></label>
             <label>Message<textarea name="message" rows="4" placeholder="What are you hoping to build?" required></textarea></label>
             <button class="st-button st-button-primary st-button-submit" type="submit">Send Message <span>↗</span></button>
-            <div class="st-form-success" role="status" aria-live="polite" hidden>✓ Message sent successfully! We will get back to you shortly.</div>
+            <p class="st-form-note">Submitting opens a prefilled email in your email app. Review it and press Send to deliver your message. If it doesn’t open, <a href="mailto:{{EMAIL}}">email us directly</a>.</p>
+            <div class="st-form-success" role="status" aria-live="polite" hidden>Your email app should open with the inquiry prepared. Review it and press Send to deliver your message.</div>
           </form>
         </div>
       </section>
